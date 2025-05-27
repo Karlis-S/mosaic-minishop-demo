@@ -11,12 +11,20 @@
     <h1>Mosaic MiniShop</h1>
     <nav>
       <a href="#">Sākums</a>
-      <a href="#">Produkti</a>
-      <a href="#">Kontakti</a>
+      <a href="admin.html">Admin</a>
     </nav>
   </header>
   <main>
     <section id="products"></section>
+    <h2>Veikt pasūtījumu</h2>
+    <form id="orderForm">
+      <label>Vārds:<br><input type="text" id="customerName" required></label><br><br>
+      <label>Adrese:<br><input type="text" id="address" required></label><br><br>
+      <label>Produkts:<br>
+        <select id="productSelect" required></select>
+      </label><br><br>
+      <button type="submit">Pasūtīt</button>
+    </form>
   </main>
   <footer>
     <p>&copy; 2025 Mosaic MiniShop</p>
